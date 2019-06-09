@@ -6,21 +6,28 @@
     android:layout_height="match_parent"
     android:orientation ="vertical"
     android:gravity="center_horizontal"
-    tools:context=".MainActivity">
+    tools:context="com.example.road.MainActivity">
 
- <ImageView
-        android:id = "@+id/isign"
-        android:src="@drawable/roadsigns"
-        android:scale = "center"
-        android:layout_width="400dp"
-        android:layout_height="400dp" />
-
-    <Button
-        android:id="@+id/b_next"
+    <TextView
+        android:id="@+id/road"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NEXT" />
+        android:text="      RoadSigns"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="520dp"
+        android:scale="center"
+        android:src="@drawable/rs" />
+
+    <Button
+        android:id="@+id/bnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    NEXT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 
 
 </LinearLayout>
-
