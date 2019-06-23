@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.road.AboutUs">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scale="center"
+        android:scaleType="fitEnd"
+        android:src="@drawable/maxresdefault" />
+    <TextView
+        android:id="@+id/parka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This app will guide the usrs about the roadsigns"
+        android:layout_below="@id/image_view"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/b_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="79dp"
+        android:text="PROCEED"
+        android:onClick="openNextPage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+
+
+</RelativeLayout>
